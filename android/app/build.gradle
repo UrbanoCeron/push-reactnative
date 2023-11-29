@@ -6,6 +6,14 @@ apply plugin: "com.google.gms.google-services"
  * This is the configuration block to customize your React Native Android app.
  * By default you don't need to apply any configuration, just uncomment the lines you need.
  */
+project.ext.envConfigFiles = [
+    debug: ".env.development",
+    qarelease: ".env.qa",
+    release: ".env.production"
+]
+
+apply from: project(':react-native-config').projectDir.getPath() + '/dotenv.gradle'
+
 react {
     /* Folders */
     //   The root of your project, i.e. where "package.json" lives. Default is '..'
@@ -73,8 +81,17 @@ android {
     ndkVersion rootProject.ext.ndkVersion
 
     compileSdkVersion rootProject.ext.compileSdkVersion
-
+    flavorDimensions 'default'
     namespace "com.push"
+    productFlavors {
+        qa {
+            applicationId "com.push"
+            minSdkVersion rootProject.ext.minSdkVersion
+            targetSdkVersion rootProject.ext.targetSdkVersion
+            versionCode 1
+            versionName "1.0"
+        }
+    }
     defaultConfig {
         applicationId "com.push"
         minSdkVersion rootProject.ext.minSdkVersion

@@ -4,6 +4,7 @@ let fcmToken:any = null;
 
 export async function requestUserPermission() {
   console.log("######################################")
+  console.log("######################################")
   console.log(":D")
   console.log("######################################")
   try {

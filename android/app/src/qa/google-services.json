@@ -1,0 +1,67 @@
+{
+  "project_info": {
+    "project_number": "657285328947",
+    "project_id": "laureate-qa-sdig",
+    "storage_bucket": "laureate-qa-sdig.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:657285328947:android:dc6494219c40171463b346",
+        "android_client_info": {
+          "package_name": "com.axity.sdig.untc.qa"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAruWXNPbFqOnUmyp9czOYYPZAr2gazZRY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:657285328947:android:452bef411ec0341c63b346",
+        "android_client_info": {
+          "package_name": "com.axity.sdig.uvm.qa"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAruWXNPbFqOnUmyp9czOYYPZAr2gazZRY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:657285328947:android:d31b2ea7c64e047563b346",
+        "android_client_info": {
+          "package_name": "com.push.qa"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAruWXNPbFqOnUmyp9czOYYPZAr2gazZRY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
