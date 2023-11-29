@@ -8,7 +8,8 @@ apply plugin: "com.google.gms.google-services"
  */
 project.ext.envConfigFiles = [
     debug: ".env.development",
-    qarelease: ".env.qa",
+    devdebug: ".env.development",
+    qadebug: ".env.qa",
     release: ".env.production"
 ]
 
@@ -85,9 +86,18 @@ android {
     namespace "com.push"
     productFlavors {
         qa {
-            applicationId "com.push"
+            applicationId "com.push.qa"
             minSdkVersion rootProject.ext.minSdkVersion
             targetSdkVersion rootProject.ext.targetSdkVersion
+            resValue 'string', 'build_config_package', 'com.push'
+            versionCode 1
+            versionName "1.0"
+        }
+        dev {
+            applicationId "com.push.dev"
+            minSdkVersion rootProject.ext.minSdkVersion
+            targetSdkVersion rootProject.ext.targetSdkVersion
+            resValue 'string', 'build_config_package', 'com.push'
             versionCode 1
             versionName "1.0"
         }

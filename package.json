@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "android": "react-native run-android",
-    "android:qa": "react-native run-android --mode=qarelease",
+    "android:dev": "react-native run-android --mode=devdebug --appIdSuffix dev",
+    "android:qa": "react-native run-android --mode=qadebug --appIdSuffix qa",
     "ios": "react-native run-ios",
     "lint": "eslint .",
     "start": "react-native start",
